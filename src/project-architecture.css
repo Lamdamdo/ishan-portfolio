@@ -1,0 +1,108 @@
+.architecture-groups {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.architecture-group {
+  padding: 15px 16px;
+  border: 1px solid rgba(218, 164, 83, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.architecture-group-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 13px;
+  color: #d9a653;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.architecture-group-number {
+  display: grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  border: 1px solid rgba(218, 164, 83, 0.4);
+  border-radius: 6px;
+  font-size: 9px;
+}
+
+.architecture-group-stages {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.architecture-stage-wrap {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.architecture-stage {
+  display: flex;
+  gap: 10px;
+  min-width: 145px;
+  max-width: 230px;
+  min-height: 62px;
+  padding: 11px 12px;
+  border: 1px solid rgba(218, 164, 83, 0.3);
+  border-radius: 8px;
+  background: linear-gradient(
+    145deg,
+    rgba(218, 164, 83, 0.09),
+    rgba(255, 255, 255, 0.025)
+  );
+}
+
+.architecture-stage-index {
+  color: #d9a653;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.architecture-stage-copy {
+  display: grid;
+  gap: 5px;
+}
+
+.architecture-stage-copy strong {
+  color: #f3f0e9;
+  font-size: 12px;
+}
+
+.architecture-stage-copy small {
+  color: #9c9a96;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.architecture-stage-arrow {
+  color: #d9a653;
+}
+
+@media (max-width: 720px) {
+  .architecture-group-stages {
+    display: grid;
+  }
+
+  .architecture-stage-wrap {
+    display: grid;
+    grid-template-columns: 1fr 16px;
+  }
+
+  .architecture-stage {
+    max-width: none;
+    min-width: 0;
+  }
+
+  .architecture-stage-arrow {
+    transform: rotate(90deg);
+  }
+}
