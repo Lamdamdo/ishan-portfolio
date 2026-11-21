@@ -5,7 +5,7 @@ import {
   ArrowUpRight, ArrowRight, Mail, Phone,
   Database, Workflow, BarChart3, Code2, Cloud, Layers3,
   X, ExternalLink, ChevronRight, Briefcase, GraduationCap,
-  MapPin, Menu
+  MapPin, Menu, Download
 } from "lucide-react";
 import ishanPhoto from "./assets/Ishan_photo.png";
 import "./App.css";
@@ -395,9 +395,19 @@ export default function App() {
           ))}
         </nav>
 
-        <a className="nav-cta" href="mailto:ishanahluwalia24@gmail.com">
-          Let's Connect <ArrowUpRight size={15} />
-        </a>
+        <div className="nav-actions">
+          <a
+            className="nav-cta"
+            href="/Ishan_Ahluwalia_DataEngineer_Resume.pdf"
+            download="Ishan_Ahluwalia_DataEngineer_Resume.pdf"
+          >
+            Resume <Download size={15} />
+          </a>
+
+          <a className="nav-cta" href="mailto:ishanahluwalia24@gmail.com">
+            Let's Connect <ArrowUpRight size={15} />
+          </a>
+        </div>
       </header>
 
       <main>
@@ -430,8 +440,17 @@ export default function App() {
               <a className="primary-button" href="#projects">
                 Explore Projects <ArrowUpRight size={17} />
               </a>
+
               <a className="secondary-button" href="#about">
                 More About Me <ArrowRight size={16} />
+              </a>
+
+              <a
+                className="secondary-button"
+                href="/Ishan_Ahluwalia_DataEngineer_Resume.pdf"
+                download="Ishan_Ahluwalia_DataEngineer_Resume.pdf"
+              >
+                Download Resume <Download size={16} />
               </a>
             </div>
 

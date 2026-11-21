@@ -380,3 +380,14 @@ button { font: inherit; }
     height: 400px;
   }
 }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .nav-actions {
+    display: none;
+  }
+}
